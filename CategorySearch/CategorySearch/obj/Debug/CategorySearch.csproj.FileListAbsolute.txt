@@ -1,0 +1,5 @@
+G:\MS_Fall_2014\ASE\CategorySearch\CategorySearch\bin\CategorySearch.dll
+G:\MS_Fall_2014\ASE\CategorySearch\CategorySearch\bin\CategorySearch.pdb
+G:\MS_Fall_2014\ASE\CategorySearch\CategorySearch\obj\Debug\CategorySearch.dll
+G:\MS_Fall_2014\ASE\CategorySearch\CategorySearch\obj\Debug\CategorySearch.pdb
+G:\MS_Fall_2014\ASE\CategorySearch\CategorySearch\obj\Debug\CategorySearch.csprojResolveAssemblyReference.cache

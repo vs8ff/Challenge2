@@ -1,0 +1,4 @@
+G:\MS_Fall_2014\ASE\BestPrice\BestPrice\bin\BestPrice.dll
+G:\MS_Fall_2014\ASE\BestPrice\BestPrice\bin\BestPrice.pdb
+G:\MS_Fall_2014\ASE\BestPrice\BestPrice\obj\Debug\BestPrice.dll
+G:\MS_Fall_2014\ASE\BestPrice\BestPrice\obj\Debug\BestPrice.pdb

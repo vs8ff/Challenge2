@@ -1,0 +1,9 @@
+G:\MS_Fall_2014\ASE\FarmerReview\FarmerReview\bin\FarmerReview.dll
+G:\MS_Fall_2014\ASE\FarmerReview\FarmerReview\bin\FarmerReview.pdb
+G:\MS_Fall_2014\ASE\FarmerReview\FarmerReview\obj\Debug\FarmerReview.dll
+G:\MS_Fall_2014\ASE\FarmerReview\FarmerReview\obj\Debug\FarmerReview.pdb
+G:\MS_Fall_2014\ASE\ASEProject\FarmerReview\FarmerReview\obj\Debug\FarmerReview.dll
+G:\MS_Fall_2014\ASE\ASEProject\FarmerReview\FarmerReview\bin\FarmerReview.dll
+G:\MS_Fall_2014\ASE\ASEProject\FarmerReview\FarmerReview\bin\FarmerReview.pdb
+G:\MS_Fall_2014\ASE\ASEProject\FarmerReview\FarmerReview\obj\Debug\FarmerReview.pdb
+G:\MS_Fall_2014\ASE\ASEProject\FarmerReview\FarmerReview\obj\Debug\FarmerReview.csprojResolveAssemblyReference.cache

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#design1").hide();
+        $("button.design1").click(function () {
+            $("#design1").toggle();
+            $("#image").toggle();
+        });
+    });
+	
+	$(document).ready(function () {
+        $("#design1").hide();
+        $("button.design2").click(function () {
+		$("#design1").hide();
+            $("#design2").toggle();
+            $("#image").toggle();
+			
+        });
+    });
+
+function insertData() {
+    var url = "http://kc-sce-cs551-2.kc.umkc.edu/aspnet_client/Group12/Project/FarmerReview/FarmerReview/Service1.svc/PutFarmerReview/design1/";
+    var farmerName = document.getElementById("fname").value;
+    var ratings = document.getElementById("rating").value;
+    var feedback = document.getElementById("fb").value;
+    var targetURL = url + farmerName + "/" + ratings+ "/" + feedback;
+    $.get(targetURL, function (data) {
+        var report = "Success";
+        if (data == report) {
+            alert("Your Data Successfully Inserted");
+        }
+    });
+    }
+</script>
+
+<style>
+    
+    .design1
+    {
+    background-color: #9F5151;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+.design1:hover {
+    border: none;
+    background:#704848;
+    box-shadow: 0px 0px 1px #777;
+        }
+    .design2
+    {
+    background-color: #9F5151;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+.design2:hover {
+    border: none;
+    background:#704848;
+    box-shadow: 0px 0px 1px #777;
+        }
+table.tab 
+{
+    position:relative;
+    left: 50%;
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}.tab table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.tab:last-child td:last-child {
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+}.tab tr:first-child td:first-child {
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}.tab tr:first-child td:last-child {
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+}.tab tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+}.tab tr:hover td{
+	background-color:#82c0ff;
+	background:-o-linear-gradient(bottom, #82c0ff 5%, #56aaff 100%);	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #82c0ff), color-stop(1, #56aaff) );
+	background:-moz-linear-gradient( center top, #82c0ff 5%, #56aaff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#82c0ff", endColorstr="#56aaff");	background: -o-linear-gradient(top,#82c0ff,56aaff);
+}.tab tr:first-child td{
+	background:-o-linear-gradient(bottom, #0069d3 5%, #007fff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0069d3), color-stop(1, #007fff) );
+	background:-moz-linear-gradient( center top, #0069d3 5%, #007fff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0069d3", endColorstr="#007fff");	background: -o-linear-gradient(top,#0069d3,007fff);
+	background-color:#0069d3;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:18px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	color:#ffffff;
+}.tab tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #0069d3 5%, #007fff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0069d3), color-stop(1, #007fff) );
+	background:-moz-linear-gradient( center top, #0069d3 5%, #007fff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0069d3", endColorstr="#007fff");	background: -o-linear-gradient(top,#0069d3,007fff);
+	background-color:#0069d3;
+}.tab tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}.tab tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}.tab td{
+	background:-o-linear-gradient(bottom, #56aaff 5%, #82c0ff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56aaff), color-stop(1, #82c0ff) ); 
+	background:-moz-linear-gradient( center top, #56aaff 5%, #82c0ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#56aaff", endColorstr="#82c0ff");	background: -o-linear-gradient(top,#56aaff,82c0ff);
+	background-color:#56aaff;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:12px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	color:#000000;
+}.tab tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.tab tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.tab tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+   
+   
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#9C8888;
+    height:300px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float: left;
+    padding:10px;	 	 
+}
+footer 
+{
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 10px; 
+     	 
+}
+#image
+{
+    position: relative;
+    top: 45px;  
+    left: -40px; 
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Feedback Page</h1>
+</header>
+
+<nav>
+<button class="design1">Add Farmer Review</button><br><br>
+<button class="design2">Show Farmer Review</button><br>
+</nav>
+<img src="reviews.png" style="width:304px;height:228px" id="image"/>
+<section>
+<div id="design1"><p>
+<table border="5" width="30%" class="tab" style="left:80%">
+<tr>
+<td>
+<h1>Add Farmer Review</h1>
+</td>
+</tr>
+<tr>
+<td>
+<h3>Farmer Name: <input type="text", id="fname"><br><br>
+</td>
+</tr>
+<tr>
+<td>
+Ratings(1 to 5): <input type="number", id="rating", min="1", max="5"><br><br>
+</td>
+</tr>
+<tr>
+<td>
+Feedback: <textarea rows="5", cols="50", id="fb"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+<button id="submit" onclick="insertData()">Submit</button>
+</td>
+</tr>
+</table>
+</h3>
+</p></div>
+</table>
+</div>
+</section>
+<footer>
+Copyright © EMercado.com
+</footer>
+</body>
+</html>
